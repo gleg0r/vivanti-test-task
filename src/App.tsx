@@ -1,12 +1,19 @@
 import s from './App.module.scss';
 import { Header } from './components/Header/Header';
+import { MainBlock } from './components/MainBlock/MainBlock';
 
 function App() {
 
   return (
     <div className={s.App}>
       <Header />
-      <main>main</main>
+      <main>
+        <MainBlock />
+        <p className={s.App__welcome}>
+          Добро пожаловать в медицинскую лабораторию KapibaraLab, где работают исключительно капибары — 
+          ваш надежный партнер в обеспечении качественной и точной диагностики!
+        </p>
+      </main>
       <footer>footer</footer>
     </div>
   )

@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.main {
+  width: 100%;
+  height: 560px;
+  @include flexCenter;
+  justify-content: space-between;
+  &__bg {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 560px;
+    background-image: url('../../assets/images/main_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  &__text {
+    padding-top: 14px;
+  }
+  &__title {
+    @include fontMain;
+    @include fontStyle(48px, $whiteMainColor, 59px, 700);
+    text-align: left;
+    text-transform: uppercase;
+    background: $blueAccentColor;
+    padding: 12px 18px 12px 18px;
+    height: fit-content;
+    border-radius: 8px 8px 8px 0px;
+  }
+  &__subtitle {
+    width: fit-content;
+    @extend .main__title;
+    color: $blueAccentColor;
+    background: $whiteMainColor;
+    border-radius: 0px 0px 8px 8px;
+  }
+  &__img {
+    padding-top: 65px;
+    padding-right: 125px;
+  }
+}

@@ -6,4 +6,14 @@
   justify-content: space-between;
   width: 100%;
   padding: 55px 0;
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__text {
+    @include fontMain;
+    @include fontStyle(14px, $grayTextColor, 130%, 400);
+    text-align: left;
+  }
 }

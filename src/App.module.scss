@@ -4,4 +4,16 @@
   @include flexCenter;
   flex-direction: column;
   width: $baseContainer;
+  &__welcome {
+    @include fontItalic;
+    @include fontStyle(24px, $blackMainColor, 140%, 600);
+    text-align: center;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  width: 100%;
 }
