@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 55px 0;
+}

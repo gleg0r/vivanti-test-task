@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.navbar {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__link {
+    @include fontMain;
+    @include fontStyle(18px, $blackMainColor, 130%, 500);
+    text-align: center;
+    transition: .3s;
+    padding: 8px 24px;
+    &:hover {
+      color: $menuHover;
+    }
+    &_active {
+      @extend .navbar__link;
+      color: $menuHover;
+      background-color: $lightAccentColor;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+//colors
+
+$menuHover: #4F58C9;
+$blackMainColor: #000000;
+$whiteMainColor: #FFFFFF;
+$blueAccentColor: #737BE1;
+$lightAccentColor: #E9EAF9;
+$grayTextColor: #4C4C4C;
+
+//size
+
+$baseContainer: 1400px;
+
+//mixins
+
+@mixin fontMain {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+@mixin fontItalic {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+@mixin fontStyle($size, $color, $height, $weight) {
+  font-size: $size;
+  color: $color;
+  height: $height;
+  font-weight: $weight;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//animations

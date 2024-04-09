@@ -1,0 +1,22 @@
+@import "../../..//styles/variables.scss";
+
+.phone {
+  @include flexCenter;
+  gap: 8px;
+  &__link {
+    @include fontMain;
+    @include fontStyle(18px, $blackMainColor, 130%, 600);
+    letter-spacing: 0%;
+    text-align: left;
+    transition: .3s;
+    &:hover {
+      color: $menuHover;
+    }
+  }
+  &__desc {
+    @include fontMain;
+    @include fontStyle(14px, $grayTextColor, 130%, 400);
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
