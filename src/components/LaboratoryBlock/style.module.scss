@@ -36,5 +36,6 @@
     @include fontMain;
     @include fontStyle(21px, $blackMainColor, 140%, 400);
     text-align: left;
+    max-width: 1020px;
   }
 }

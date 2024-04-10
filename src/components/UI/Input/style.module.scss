@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.input {
+  width: 100%;
+  padding: 12px 16px 12px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  @include fontMain;
+  @include fontStyle(21px, $labelPlaceholder, 140%, 400);
+  text-align: left;
+  border: 2px solid white;
+  &::placeholder {
+    color: $labelPlaceholder;
+  }
+  &:focus {
+    border: 2px solid $blueAccentColor;
+  }
+  &:invalid {
+    border: 2px solid $labelError;
+  }
+
+}

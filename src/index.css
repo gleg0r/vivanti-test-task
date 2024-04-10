@@ -6,6 +6,16 @@
   list-style-type: none;
 }
 
+body::-webkit-scrollbar {
+  background: #E9EAF9;
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #737BE1;
+  border-radius: 6px;
+}
+
 .container {
   display: flex;
   align-items: center;

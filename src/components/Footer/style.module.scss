@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  @include flexCenter;
+  width: 100%;
+  background-color: $menuHover;
+  padding: 55px 0;
+  &__text {
+    @include fontMain;
+    @include fontStyle(16px, $whiteMainColor, 130%, 400);
+    text-align: left;
+  }
+}

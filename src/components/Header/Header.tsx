@@ -6,15 +6,15 @@ import { PhoneRequest } from '../UI/PhoneRequest/PhoneRequest';
 
 export const Header: FC = () => {
   return(
-    <div className='container'>
-      <header className={s.header}>
+    <header className={s.header}>
+      <div className='container'>
         <div className={s.header__logo}>
           <img src={logo} alt='Kapibara Lab' />
           <span className={s.header__text}>Современные методики<br/>диагностики</span>
         </div>
         <NavBar />
         <PhoneRequest />
-      </header>
-    </div>
+      </div>
+    </header>
   )
 }

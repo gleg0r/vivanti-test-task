@@ -10,5 +10,6 @@
     @include fontItalic;
     @include fontStyle(24px, $blackMainColor, 140%, 600);
     text-align: center;
+    max-width: 1400px;
   }
 }
