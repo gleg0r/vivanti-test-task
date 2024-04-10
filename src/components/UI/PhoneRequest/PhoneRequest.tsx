@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import s from './style.module.scss';
-import phoneIcon from '../../../assets/svg/icons/phone.svg';
+import phoneIcon from '../../../assets/images/icons/phone.svg';
 
 export const PhoneRequest: FC = () => {
 

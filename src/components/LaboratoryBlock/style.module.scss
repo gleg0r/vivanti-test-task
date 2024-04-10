@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.laboratory {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 48px;
+  padding: 48px 0px;
+  &__bg {
+    position: absolute;
+    top: 969px;
+    left: 0;
+    width: 100%;
+    height: 428px;
+    background-size: cover;
+    background: $bgGrad;
+    z-index: -1;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+  }
+  &__title {
+    @include fontMain;
+    @include fontStyle(36px, $blackMainColor, 44px, 600);
+    text-align: left;
+  }
+  &__desc {
+    @include fontMain;
+    @include fontStyle(21px, $blackMainColor, 140%, 400);
+    text-align: left;
+  }
+}
