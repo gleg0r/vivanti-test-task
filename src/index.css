@@ -6,7 +6,9 @@
   list-style-type: none;
 }
 
-#root {
+.container {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
 }

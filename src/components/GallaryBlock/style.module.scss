@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.gallary {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  &__title {
+    @include fontMain;
+    @include fontStyle(36px, $blackMainColor, 44px, 600);
+    text-align: left;
+  }
+  &__images {
+    display: flex;
+    gap: 24px;
+  }
+  &__left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+  }
+  &__right {
+    @extend .gallary__left;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+  &__first {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  &__fourth {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  &__fifth {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  &__sixth {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  &__seventh {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+}

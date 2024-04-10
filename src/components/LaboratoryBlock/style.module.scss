@@ -4,8 +4,9 @@
   width: 100%;
   height: fit-content;
   display: flex;
-  gap: 48px;
+  justify-content: center;
   padding: 48px 0px;
+  background: $bgGrad;
   &__bg {
     position: absolute;
     top: 969px;
