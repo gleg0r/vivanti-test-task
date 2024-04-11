@@ -6,7 +6,7 @@ export const MainBlock: FC = () => {
 
   return(
     <section className={s.main}>
-      <div className='container'>
+      <div className={s.main__container}>
         <div className={s.main__text}>
           <h1 className={s.main__title}>точные результаты</h1>
           <h2 className={s.main__subtitle}>точно в срок</h2>

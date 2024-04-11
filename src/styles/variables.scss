@@ -33,7 +33,7 @@ $baseContainer: 1400px;
 @mixin fontStyle($size, $color, $height, $weight) {
   font-size: $size;
   color: $color;
-  height: $height;
+  line-height: $height;
   font-weight: $weight;
 }
 

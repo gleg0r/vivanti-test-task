@@ -10,7 +10,7 @@ export const Header: FC = () => {
       <div className='container'>
         <div className={s.header__logo}>
           <img src={logo} alt='Kapibara Lab' />
-          <span className={s.header__text}>Современные методики<br/>диагностики</span>
+          <span className={s.header__text}>Современные методики<br/> диагностики</span>
         </div>
         <NavBar />
         <PhoneRequest />

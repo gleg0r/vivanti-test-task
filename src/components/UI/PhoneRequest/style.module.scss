@@ -19,4 +19,9 @@
     letter-spacing: 0%;
     text-align: left;
   }
+  &__text {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
 }

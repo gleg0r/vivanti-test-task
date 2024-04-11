@@ -8,25 +8,47 @@
   background: $bgGrad;
   gap: 48px;
   margin-bottom: 96px;
+  @media (max-width: 900px) {
+    padding: 36px 18px;
+    height: fit-content;
+    gap: 36px;
+    margin-bottom: 30px;
+  }
   &__title {
     @include fontMain;
     @include fontStyle(36px, $blackMainColor, 44px, 600);
     text-align: left;
+    @media (max-width: 900px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
   }
   &__text {
     @include fontMain;
     @include fontStyle(21px, $blackMainColor, 140%, 400);
     text-align: center;
+    @media (max-width: 900px) {
+      text-align: left;
+      font-size: 18px;
+    }
   }
   &__fields {
+    width: 100%;
     @include flexCenter;
     gap: 19px;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
   }
   &__form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 48px;
+    @media (max-width: 900px) {
+      gap: 36px;
+    }
   }
 }
 
@@ -41,5 +63,15 @@
     @include fontMain;
     @include fontStyle(24px, $blueAccentColor, 140%, 600);
     text-align: left;
+    @media (max-width: 900px) {
+      width: 324px;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 209px 18px;
+    margin-bottom: 30px;
   }
 }

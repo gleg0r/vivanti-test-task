@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     gap: 24px;
+    @media (max-width: 1000px ){
+      display: none;
+    }
   }
 
   &__link {

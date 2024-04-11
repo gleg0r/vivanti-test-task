@@ -6,10 +6,20 @@
   align-items: center;
   gap: 96px;
   width: 100%;
+  @media (max-width: 900px) {
+    gap: 30px;
+  }
   &__welcome {
     @include fontItalic;
     @include fontStyle(24px, $blackMainColor, 140%, 600);
     text-align: center;
     max-width: 1400px;
+    @media (max-width: 900px) {
+      padding: 40px 18px 0 18px;
+      font-size: 18px;
+    }
+    @media (max-width: 380px) {
+      width: 324px;
+    }
   }
 }

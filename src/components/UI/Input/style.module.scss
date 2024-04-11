@@ -10,6 +10,9 @@
   @include fontStyle(21px, $labelPlaceholder, 140%, 400);
   text-align: left;
   border: 2px solid white;
+  @media (max-width: 900px) {
+    font-size: 18px;
+  }
   &::placeholder {
     color: $labelPlaceholder;
   }

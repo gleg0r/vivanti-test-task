@@ -19,7 +19,9 @@ export const GallaryBlock: FC = () => {
           <img className={s.gallary__third} src={leftLabThird} alt="" />
         </div>
         <div className={s.gallary__right}>
-          <img className={s.gallary__fourth} src={rightLabFirst} alt="" />
+          <div className={s.gallary__fourth}>
+            <img className={s.gallary__crop} src={rightLabFirst} alt="" />
+          </div>
           <img className={s.gallary__fifth} src={rightLabSecond} alt="" />
           <img className={s.gallary__sixth} src={rightLabThird} alt="" />
           <img className={s.gallary__seventh} src={rightLabFourth} alt="" />

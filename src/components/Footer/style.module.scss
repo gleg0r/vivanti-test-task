@@ -5,9 +5,28 @@
   width: 100%;
   background-color: $menuHover;
   padding: 55px 0;
+  @media (max-width: 900px) {
+    padding: 24px 18px;
+  }
+  &__container {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 18px;
+    }
+  }
   &__text {
     @include fontMain;
     @include fontStyle(16px, $whiteMainColor, 130%, 400);
     text-align: left;
+    @media (max-width: 900px) {
+      font-size: 12px;
+      text-align: center;
+      padding: 0 18px;
+    }
   }
 }
