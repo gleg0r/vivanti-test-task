@@ -1,5 +1,5 @@
 Тестовое задание для Vivanti 
 
-Стек: React, React-Scroll, SCSS modules, Typescript
+Стек: React, Redux, Redux Toolkit, React-Scroll, SCSS modules, Typescript
 
 Деплой:
