@@ -29,3 +29,17 @@
     gap: 48px;
   }
 }
+
+.success {
+  width: 100%;
+  @include flexCenter;
+  padding: 182px 356px;
+  background: $bgGrad;
+  gap: 24px;
+  margin-bottom: 96px;
+  &__text {
+    @include fontMain;
+    @include fontStyle(24px, $blueAccentColor, 140%, 600);
+    text-align: left;
+  }
+}

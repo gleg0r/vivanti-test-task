@@ -1,11 +1,16 @@
 import { FC } from 'react';
 import s from './style.module.scss';
+import { useSelector } from 'react-redux';
 import { MainBlock } from '../../components/MainBlock/MainBlock';
 import { LaboratoryBlock } from '../../components/LaboratoryBlock/LaboratoryBlock';
 import { GallaryBlock } from '../../components/GallaryBlock/GallaryBlock';
 import { FeedbackForm } from '../../components/FeedbackForm/FeedbackForm';
+import { FormSuccess } from '../../components/FeedbackForm/FormSuccess';
+import { RootState } from '../../store';
 
 export const MainPage: FC = () => {
+  const { status } = useSelector((state: RootState) => state.form);
+ 
   return (
     <main className={s.main}>
       <MainBlock />
@@ -19,7 +24,7 @@ export const MainPage: FC = () => {
         <GallaryBlock />
       </div>
       <div className='container'>
-        <FeedbackForm />
+        { status !== 'resolved' ?  <FeedbackForm /> : <FormSuccess />}
       </div>
     </main>
   );

@@ -5,7 +5,7 @@ import mascot from '../../assets/images/kapibara_main.png';
 export const MainBlock: FC = () => {
 
   return(
-    <div className={s.main}>
+    <section className={s.main}>
       <div className='container'>
         <div className={s.main__text}>
           <h1 className={s.main__title}>точные результаты</h1>
@@ -13,6 +13,6 @@ export const MainBlock: FC = () => {
         </div>
         <img className={s.main__img} src={mascot} alt="Kapibara" />
       </div>
-    </div>
+    </section>
   )
 }

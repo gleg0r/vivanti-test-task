@@ -10,7 +10,7 @@ import rightLabFourth from '../../assets/images/lab_7.png'
 
 export const GallaryBlock: FC = () => {
   return (
-    <div className={s.gallary}>
+    <section id='gallery' className={s.gallary}>
       <h3 className={s.gallary__title}>Галерея</h3>
       <div className={s.gallary__images}>
         <div className={s.gallary__left}>
@@ -25,6 +25,6 @@ export const GallaryBlock: FC = () => {
           <img className={s.gallary__seventh} src={rightLabFourth} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

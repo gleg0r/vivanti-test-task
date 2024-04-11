@@ -1,12 +1,13 @@
 import { FC } from 'react';
 import s from './style.module.scss';
+import { Link, animateScroll } from 'react-scroll';
 import { Button } from '../UI/Button/Button';
 import kapibaraInLab from '../../assets/images/kapibara_lab.png';
 import arrow from '../../assets/images/icons/arrow.svg';
 
 export const LaboratoryBlock: FC = () => {
   return (
-    <div className={s.laboratory}>
+    <section id='lab' className={s.laboratory}>
       <div className='container'>
         <div className={s.laboratory__info}>
           <h3 className={s.laboratory__title}>Лаборатория</h3>
@@ -21,10 +22,10 @@ export const LaboratoryBlock: FC = () => {
               надежность результатов.
             </p>
           </div>
-          <Button icon={arrow}>Оставить заявку</Button>
+          <Button icon={arrow}><Link to='form' smooth={`${animateScroll}`} duration={500}>Оставить заявку</Link></Button>
         </div>
         <img className={s.laboratory__img} src={kapibaraInLab} alt="Kapibara in lab" />
       </div>
-    </div>
+    </section>
   )
 }
