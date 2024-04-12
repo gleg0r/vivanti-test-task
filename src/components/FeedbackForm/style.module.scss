@@ -59,6 +59,7 @@
   background: $bgGrad;
   gap: 24px;
   margin-bottom: 96px;
+  animation: appearing 1s linear;
   &__text {
     @include fontMain;
     @include fontStyle(24px, $blueAccentColor, 140%, 600);

@@ -23,7 +23,9 @@ export const LaboratoryBlock: FC = () => {
                 надежность результатов.
               </p>
             </div>
-            <Button icon={arrow}><Link to='form' smooth={`${animateScroll}`} duration={500}>Оставить заявку</Link></Button>
+            <Link to='form' smooth={`${animateScroll}`} duration={500}>
+              <Button icon={arrow}>Оставить заявку</Button>
+            </Link>
           </div>
           <img className={s.laboratory__img} src={kapibaraInLab} alt="Kapibara in lab" />
         </div>

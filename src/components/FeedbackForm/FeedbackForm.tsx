@@ -61,9 +61,7 @@ export const FeedbackForm: FC = () => {
   function sendRequest(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if(user.name !== '' && user.secondName !== '' && user.surName !== '') setIsSubmit(true);
-    if(user.name === '') setIsTouched({...isTouched, name: true});
-    if(user.secondName === '') setIsTouched({...isTouched, secondName: true});
-    if(user.surName === '') setIsTouched({...isTouched, surName: true});
+    else setIsTouched({name: true, secondName: true, surName: true})
   }
 
   return (
